@@ -1,0 +1,9 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^ahlahoney\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ahlahoney\.com$
+RewriteRule ^home\/$ "http\:\/\/ahlahoney\.com\/index\.html" [R=301,L]
+

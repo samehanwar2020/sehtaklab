@@ -1,0 +1,376 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic);
+/*
+Table Of Contents
+
+bootstrap override 		- Here we overriding some of predefined bootstrap styles.
+vertical margins		- Here we set up a vertical margins and paddings for main sections of our HTML Temlpate.
+general styles 			- In this section we set up a base template styles, such as links color, general section styles, theme styled buttons, utility classes etc.
+Common Sections  		- In this section we styling our main sections classes (color sections, dark and light sections, parallax) and common elements within it (headings, links, etc).
+Main Menu Styles  		- In this section we styling our Main Menu.
+blocks  				- Here you can find styles for common blocks, such as upcomming events, classes, timetable etc.
+blog 				 	- This section contains styles for a blog page and a single post page.
+widgets 				- In this sections we styled all major shortcodes and widgets.
+page preloader 			- In this section are styles page preloader.
+owl carousel 			- This section contains styles for owl carousel plugin
+BxSlider 				- This section contains styles for Bx Slider plugin
+totop 				 	- In this section you'll find a styles for ToTop button.
+teaser icons 			- This section responsible for decorative icons that we use in our template. You can find all of these icons in this documentation.
+social icons 			- This section responsible for social icons that we use in our template. You can find all of these icons in this documentation.
+prettyPhoto             - In this section are styles for prettyPhoto LightBox plugin.
+portfolio 			    - In this section are styles for "google style" gallery.
+
+*/
+
+blockquote, .blockquote {
+position: relative;    
+border: none;
+margin: 20px 0;
+padding: 30px;
+line-height: 1.2;
+border-left: 10px solid #12b9d4;
+font-size: inherit;
+color: #393939;
+}
+
+blockquote h3 {font-style: normal; font-size: 22px; margin-top: 14px;}
+blockquote h3:before, blockquote h3:after {content: ' - ';}
+
+sup, .sup {
+position: relative;
+font-size: 75%;
+line-height: 0;
+vertical-align: baseline;
+top: -0.5em;
+}
+sub, .sub {
+position: relative;
+font-size: 75%;
+line-height: 0;
+vertical-align: baseline;
+bottom: -0.25em;
+}
+
+img {max-width: 100%;}
+a {
+color: #12b9d4;
+text-decoration: none;
+-webkit-transition: all 0.2s linear 0s;
+-moz-transition: all 0.2s linear 0s;
+-o-transition: all 0.2s linear 0s;
+-ms-transition: all 0.2s linear 0s;
+transition: all 0.2s linear 0s;
+}
+
+a:hover {
+color: #393939;    
+text-decoration: none;
+-webkit-transition: all 0.1s linear 0s;
+-moz-transition: all 0.1s linear 0s;
+-o-transition: all 0.1s linear 0s;
+-ms-transition: all 0.1s linear 0s;
+transition: all 0.1s linear 0s;
+}
+
+a:focus {
+color: #393939;
+outline: medium none;
+text-decoration: none;
+}
+a img {
+-webkit-transition: all 0.2s linear 0s;
+-moz-transition: all 0.2s linear 0s;
+-o-transition: all 0.2s linear 0s;
+-ms-transition: all 0.2s linear 0s;
+transition: all 0.2s linear 0s;
+}
+a:hover img {
+opacity: 0.8;
+}
+iframe{border:none; max-width: 100%;}
+
+
+
+/*** prettyPhoto ***/
+div.facebook .pp_expand{background:url(../img/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.facebook .pp_expand:hover{background:url(../img/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.facebook .pp_contract{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.facebook .pp_contract:hover{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.facebook .pp_close{width:22px;height:22px;background:url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;cursor:pointer;z-index:3000;}
+div.facebook .pp_description{margin:0 37px 0 0}
+div.facebook .pp_loaderIcon{background:url(../img/prettyPhoto/facebook/loader.gif) center center no-repeat}
+div.facebook .pp_arrow_previous{background:url(../img/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;height:22px;margin-top:0;width:22px}
+div.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default}
+div.facebook .pp_arrow_next{background:url(../img/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;height:22px;margin-top:0;width:22px}
+div.facebook .pp_arrow_next.disabled{background-position:-32px -96px;cursor:default}
+div.facebook .pp_nav{margin-top:0}
+div.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px; margin-top: -2px;}
+div.facebook .pp_nav .pp_play{background:url(../img/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;height:22px;width:22px}
+div.facebook .pp_nav .pp_pause{background:url(../img/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;height:22px;width:22px}
+div.facebook .pp_next:hover{background:url(../img/prettyPhoto/facebook/btnNext.png) center right no-repeat;cursor:pointer}
+div.facebook .pp_previous:hover{background:url(../img/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.pp_pic_holder a:focus{outline:none}
+div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
+div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
+.pp_content{height:40px;min-width:40px; overflow: hidden;}
+* html .pp_content{width:40px}
+.pp_content_container{position:relative;text-align:left;width:100%}
+.pp_content_container .pp_left{padding-left:20px}
+.pp_content_container .pp_right{padding-right:20px}
+.pp_content_container .pp_details{float:left;/*margin:10px 0 2px;*/ padding:7px 10px; background-color: #fff;}
+.pp_description{display:none;margin:0}
+.pp_social{float:left;margin:0}
+.pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}
+.pp_social .twitter{float:left}
+.pp_nav{clear:right;float:left;margin:3px 10px 0 0}
+.pp_nav p{float:left;white-space:nowrap;margin:2px 4px}
+.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:4px;text-indent:-10000px}
+a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}
+.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}
+.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}
+.pp_gallery div{float:left;overflow:hidden;position:relative}
+.pp_gallery ul{float:left;height:35px;position:relative;white-space:nowrap;margin:0 0 0 5px;padding:0}
+.pp_gallery ul a{border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}
+.pp_gallery ul a img{border:0}
+.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}
+.pp_gallery li.default a{background:url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px}
+.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px!important}
+a.pp_next{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%; -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none;}
+a.pp_previous{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%;-webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none;}
+a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
+a.pp_close{position:absolute;right:30px;top:7px;display:block;line-height:22px;text-indent:-10000px}
+.pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
+#pp_full_res{line-height:1!important}
+#pp_full_res .pp_inline{text-align:left}
+#pp_full_res .pp_inline p{margin:0 0 15px}
+div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
+.pp_top,.pp_bottom{height:20px;position:relative}
+* html .pp_top,* html .pp_bottom{padding:0 20px}
+.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}
+.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}
+* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
+.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
+.pp_fade,.pp_gallery li.default a img{display:none}
+
+/*portfolio*/
+
+.gallery-grid {
+list-style: none;
+padding:0;
+margin: 0 auto;
+text-align: center;
+width: 100%;
+}
+
+.gallery-grid li {
+display: inline-block;
+/*margin: 10px 5px 0 5px;*/
+margin: 10px 0;
+padding-left: 10px;
+padding-right: 10px;
+vertical-align: top;
+/*height: 250px;*/
+width: 24%;
+}
+.gallery-grid.gallery-3-columns li {
+width: 33%;
+}
+.gallery-grid.gallery-5-columns li {
+width: 19%;
+}
+.gallery-grid li strong{
+	color: #393939;
+}
+
+@media screen and (max-width: 992px) {
+
+	.gallery-grid li {
+		width: 49% !important;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+
+	.gallery-grid li {
+		width: 80% !important;
+	}
+	
+}
+
+.gallery-grid li > a,
+.gallery-grid li > a img {
+border: none;
+outline: none;
+display: block;
+position: relative;
+}
+
+.gallery-grid li > a + h3 {
+font-size: 16px; 
+text-transform: uppercase;
+margin: 0;
+padding: 20px 0;
+background-color: #fff;
+color: #393939;
+}
+
+.gallery-grid .portfolio_description {
+display: none;
+}
+
+
+.gallery-grid li.gallery-expanded > a::after {
+top: auto;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-bottom-color: #fff;
+border-width: 15px;
+left: 50%;
+margin: 45px 0 0 -15px;
+}
+
+.gallery-expander {
+position: absolute;
+top: auto;
+left: 0;
+width: 100%;
+margin-top: 10px;
+text-align: left;
+height: 0;
+overflow: hidden;
+background-color: #fff;
+}
+
+.gallery-expander-inner {
+padding: 50px 30px;
+height: 100%;
+}
+
+.gallery-close {
+position: absolute;
+width: 30px;
+height: 30px;
+top: 20px;
+right: 20px;
+cursor: pointer;
+}
+
+.gallery-close::before,
+.gallery-close::after {
+content: '';
+position: absolute;
+width: 100%;
+top: 50%;
+height: 3px;
+background: #393939;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.gallery-close::after {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.gallery-close:hover::before,
+.gallery-close:hover::after {
+background: #393939;
+}
+
+.gallery-fullimg,
+.gallery-details {
+width: 50%;
+float: left;
+height: 100%;
+overflow: hidden;
+position: relative;
+}
+
+.gallery-details {
+padding: 0 40px 0 20px;
+}
+
+.gallery-fullimg {
+text-align: center;
+}
+
+.gallery-fullimg img {
+display: inline-block;
+max-height: 100%;
+max-width: 100%;
+}
+
+.gallery-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 650px) {
+
+	.gallery-fullimg { display: none; }
+	.gallery-details { float: none; width: 100%; }
+	
+}
+
+.qr-img{
+opacity: 1;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.qr-text{
+padding-top: 10px;
+}
+
+
+iframe[src*="//www.google.com"] {
+  min-height: 400px;
+  width: 100%;
+margin-top: -30px;
+}
+ 
+.xt{
+color:#fff;
+}
+
+.upperspace{
+margin-top: 50px;
+}
+
+.jumbotron{
+margin-bottom: 0px;
+}
